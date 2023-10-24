@@ -9,11 +9,10 @@ h1 {
 .assign {
     display: flex;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
     background: rgba(204, 188, 172, 0.753);
 }
 .assign img {
-    width: auto;
-    max-width: 60%;
+    width: 200px;
     padding: 10px;
 }
