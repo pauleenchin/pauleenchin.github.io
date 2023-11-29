@@ -1,18 +1,37 @@
 body {
     background: linen;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
 }
 h1 {
     color: midnightblue;
     text-align: center;
+    width: 100%;
+    display: block;
+}
+h1:hover {
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 .assign {
+    background-color: rgba(204, 188, 172, 0.753);
     display: flex;
     padding: 10px;
     margin: 10px;
-    background: rgba(204, 188, 172, 0.753);
+    border-radius: 20px;
+    width: 20%;
+    box-shadow: 8px 8px brown;
+    display: block;
 }
 .assign img {
     width: 200px;
     padding: 10px;
+    border: 2px solid midnightblue;
 }
