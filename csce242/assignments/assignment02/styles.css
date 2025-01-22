@@ -1,3 +1,86 @@
+/* Structure */
 body{
-    back
+    background-color: rgba(186,217,217,0.76);
+    background-image: url(../assignment02/images/motherpearlbg.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    background-blend-mode: overlay;
+    
+}
+
+#main-header {
+    background-color: #BAD9D9;
+    color: #026873;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.subheader {
+    font-size: x-large;
+    color: #026873;
+}
+
+h2 {
+    color: #7d737d;
+}
+
+#content {
+    background-color: whitesmoke;
+    padding: 3%;
+    width: 80%;
+    margin: auto;
+    border-radius: 4px;
+}
+
+p {
+    color: #261626;;
+}
+
+/* Navigation */
+#main-nav a {
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 3px;
+    background-color: #BF8F73;
+    color: whitesmoke;
+}
+#main-nav a:hover {
+    background-color: #6A9BA6;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #6A9BA6;
+    color: whitesmoke;
+}
+
+tbody {
+    background-color: #ddecec;
+    color: #261626;
+}
+
+th, td {
+    border: 1px solid #BAD9D9;
+    padding: 10px;
+}
+
+/* Typography */
+#content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    line-height: 1.4;
+
+}
+
+/* Images */
+img {
+    margin: 20px auto;
+    display: block;
+
 }
