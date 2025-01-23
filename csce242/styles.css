@@ -1,0 +1,49 @@
+/* Structure */
+body {
+    background-image: url(../csce242/images/prettybg.jpg);
+    background-size:auto;
+    background-repeat: repeat;
+    background-color: rgba(1,58,64,0.25);
+    background-blend-mode: overlay;
+}
+
+#page {
+    background-color: whitesmoke;
+    padding: 2%;
+    width: 90%;
+    margin: auto;
+    color: #013A40;
+    line-height: 1.4;
+    height: 100vh;
+}
+
+#name {
+    color: #c2a674;
+}
+
+.headers {
+    color: #107373;
+}
+
+footer {
+    color: antiquewhite;
+}
+
+/* Navigation */
+.assignment-links {
+    text-decoration: none;
+    color: #013A40;
+}
+
+ .assignment-links:hover {
+    color: #F2D091;
+    font-weight: bolder;
+ }
+
+/* Typography */
+#page {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
