@@ -19,10 +19,24 @@ body {
 
 #name {
     color: #c2a674;
+    text-align: left;
 }
 
-.headers {
+header h1, header h2, header h3 {
     color: #107373;
+    text-align: center;
+}
+
+header h3 {
+    padding-right: 10px;
+}
+
+#assignment {
+    background-color: azure;
+    padding: 8px;
+    margin: 15px auto;
+    border-radius: 2px;
+    border: 3px solid aliceblue;
 }
 
 footer {
@@ -30,6 +44,10 @@ footer {
 }
 
 /* Navigation */
+#assignment a {
+    text-decoration: none;
+}
+
 .assignment-links {
     text-decoration: none;
     color: #013A40;
@@ -37,12 +55,30 @@ footer {
 
  .assignment-links:hover {
     color: #F2D091;
-    font-weight: bolder;
  }
 
 /* Typography */
 #page {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Media Queries */
+@media screen and (min-width:600px) {
+    .columns {
+        display: flex;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
+    
 }
 
 
