@@ -28,11 +28,24 @@ body {
     padding: 7px;
 }
 
-#section-1 p {
+#section-1 p, #section-2 p {
     width: 300px auto;
     font-size: smaller;
     text-align: left;
     margin: 16px;
+}
+
+#section-1, #section-2 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+#section-1 div, #section-2 section {
+    width: min-content;
+    
+
 }
 
 #big-ideas {
@@ -107,9 +120,11 @@ body {
 /* Typography */
 #main-header {
     text-align: center;
+    padding: 5px;
 }
 
 #main-nav a, #link-nav a, #link-title{
+    padding: 5px;
     color: antiquewhite;
 }
 
@@ -126,15 +141,15 @@ body {
     }
 
     #section-1 {
-        flex: 33%;
+        flex: 2;
     }
 
     #section-2 {
-        flex: 50%;
+        flex: 3;
     }
 
     #link-bar {
-        flex: 17%;
+        flex: 1;
     }
     
 }
