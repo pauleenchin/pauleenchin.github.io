@@ -14,7 +14,6 @@ body {
     margin: auto;
     color: #013A40;
     line-height: 1.4;
-    height: 100vh;
 }
 
 #name {
@@ -32,7 +31,7 @@ header h3 {
 }
 
 #assignment {
-    background-color: azure;
+    background-color: rgb(148, 190, 190);
     padding: 8px;
     margin: 15px auto;
     border-radius: 2px;

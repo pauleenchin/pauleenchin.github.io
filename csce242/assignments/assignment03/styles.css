@@ -1,132 +1,140 @@
 /* Structure */
 body {
-    background-color: rgb(190, 224, 244);
+    background-color: #FACFCE;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #content {
-    width: 85%;
     margin: auto;
-    background-color: #d27d7d;
-    border-radius: 2px;
-}
-
-#main-header {
-    margin: auto;
-}
-
-#big-ideas {
-    color: rgb(50, 53, 70);
-    
-}
-
-.idea {
-    background-color: rgb(197, 162, 75);
-    margin: 5px;
-    padding: 10px;
-    text-align: left;
-    border-radius: 5px;
-}
-
-div {
-    display: block;
-    unicode-bidi: isolate;
 }
 
 #secondary-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    background-color: #008f8d8f;
+    width: 100%;
+    
 }
 
-#midbar {
-    flex-shrink: 0;
-    padding: 15px;
-    background-color: #d27d7d;
-    color: white;
+#main-nav a, #section-1 p {
     text-align: center;
 }
 
-#midbar a{
-    text-decoration: underline;
-    color: white;
+#link-nav ul {
+    text-align: left;
+    padding-left: 0;
 }
 
-#midbar ul {
-    padding-left: 0%;
-    list-style-type: none;
+#link-bar {
+    background-color: #23606E;
+    padding: 7px;
 }
 
-#main-nav a {
+#section-1 p {
+    width: 300px auto;
+    font-size: smaller;
+    text-align: left;
+    margin: 16px;
+}
+
+#big-ideas {
+    width: 85%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+#idea-1, #idea-2, #idea-3 {
+    padding: 5px;
+    border-radius: 4px;
+    border-bottom: 5px solid #FACFCE ;
+    background-color: #008f8d8f;
+}
+
+#big-ideas h3, #big-ideas p  {
+    padding: 8px;
+    margin: auto;
+}
+
+#section-1 div, #section-2 section {
     text-align: center;
 }
-
-/* Typography */
-#big-ideas p {
-    display: inline-block;
-}
-
 
 /* Navigation */
-#main-nav ul{
+#main-nav ul {
     padding-left: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
 }
 
 #main-nav li {
     list-style-type: none;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: antiquewhite;
-    margin: auto;
+    border: 1px solid #FACFCE;
+    padding: 5px;
+    background-color: #23606E;
+    text-align: center;
 }
 
-#main-nav a {
-    text-decoration-line: underline;
-    text-align: center;
+#main-nav li:hover {
+    background-color: #23606e80;
+}
+
+#main-nav a, #link-nav a {
+    text-decoration: none;
+    padding: 6px;
     
 }
 
-/* Images */
-#big-ideas img {
+#link-nav li {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0;
     padding: 5px;
+    margin: auto;
+    color: rgb(197, 214, 228);
+    
+
 }
 
+#link-nav a {
+    text-decoration-line: underline;
+}
+
+/* Images */
+#big-idea img {
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Typography */
+#main-header {
+    text-align: center;
+}
+
+#main-nav a, #link-nav a, #link-title{
+    color: antiquewhite;
+}
+
+
+
 /* Media Queries */
-@media screen and (min-width: 600px) {
-    .columns {
+@media screen and (min-width: 300px){
+    .columns, #main-nav ul {
         display: flex;
     }
 
-    .wrap-columns {
-        flex-wrap: wrap;
-    }
-
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .one {
+    .one, #main-nav li {
         flex: 1;
     }
 
-    .two {
-        flex: 2;
+    #section-1 {
+        flex: 33%;
     }
 
-    .three {
-        flex: 3;
+    #section-2 {
+        flex: 50%;
     }
 
-    .four {
-        flex: 4;
+    #link-bar {
+        flex: 17%;
     }
+    
 }
-
-
-
