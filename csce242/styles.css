@@ -21,7 +21,7 @@ body {
     text-align: left;
 }
 
-header h1, header h2, header h3 {
+header h1, h2, header h3 {
     color: #107373;
     text-align: center;
 }
@@ -30,29 +30,48 @@ header h3 {
     padding-right: 10px;
 }
 
-#assignment {
+#assignment-block, #project-block {
     background-color: rgb(148, 190, 190);
     padding: 8px;
     margin: 15px auto;
     border-radius: 2px;
     border: 3px solid aliceblue;
+    text-align: center;
 }
 
 footer {
     color: antiquewhite;
 }
 
+/* Images */
+#assignment-block img, #project-block img {
+    display: block;
+    margin-top: auto;
+    position: relative;
+    padding: 8px;
+    width: 200px;
+    height: 100px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
 /* Navigation */
-#assignment a {
+#assignment-block a, #project-block a {
     text-decoration: none;
 }
 
-.assignment-links {
+.assignment-links, .project-links {
     text-decoration: none;
     color: #013A40;
+    font-weight: bolder;
+    padding: 15px auto 10px auto;
 }
 
- .assignment-links:hover {
+ .assignment-links:hover, .project-links:hover {
     color: #F2D091;
  }
 
@@ -62,21 +81,23 @@ footer {
 }
 
 /* Media Queries */
-@media screen and (min-width:600px) {
+@media screen and (min-width:900px) {
     .columns {
         display: flex;
+        flex-wrap: nowrap;
     }
 
     .one {
         flex: 1;
     }
 
-    .center {
-        display: block;
+    #assignment-links, #project-links {
         margin-left: auto;
         margin-right: auto;
-        width: 200px;
     }
+
+    
+
     
 }
 
