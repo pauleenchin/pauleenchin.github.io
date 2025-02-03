@@ -1,49 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 #content {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 5%;
-    margin-right: 5%;
+    font-family: Arial, sans-serif, Helvetica;
+    z-index: 1;
 }
 
-#main-header {
-    background-color: rgb(65, 61, 61);
-    display: block;
-    
-    
-}
-
-#college-header {
-    width: 100%;
-    background-color: rgb(137, 7, 7);
-    padding: 5px;
-
-}
-
-
-#header-nav {
-    text-transform: uppercase;
-    float: inline-end;
-    
-    width: 60%;
-}
-
-#header-nav ul {
+#black-header {
+    background-color: black;
     display: flex;
-    background-color: aqua;
-    
+    flex-direction: column;
+    font-size: 12px;
+    text-align: right;
+    height: 90px;
+    z-index: 1000;
+    position: relative;
+    width: 100%;
 }
 
-#header-nav li {
-    list-style-type: none;
-    background-color: aquamarine;
-    padding: 5px;
-    
+#black-header-logo {
+    text-align: left;
+    margin-top: -5px;
+    padding-left: 80px;
+    margin-bottom: 10px;
 }
 
-#header-nav a, #header-nav li {
-    text-decoration: none;
-    font-size: xx-small;
+#garnet-header {
+    width: 100%;
+    margin-top: -1px;
+    background-color: rgb(137, 7, 7);
+    padding-left: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: white;
+    height: 40px;
+    text-align: left;
+    font-size: 25px;
+
+}
+
+#featured-article-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+#white-caption {
+    background-color: white;
+    width: 300px;
+    height: 130px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(80, 7, 7, 0.651);
+    position: absolute;
+    bottom: 40px;
+    left: 240px;
+}
+
+
+
+/* Images */
+#black-header-logo img{
+    width: 250px;
+    height: 50px;
+}
+
+#featured-article-container img {
+    width: 1100px;
+    height: 500px;
+}
+
+/* Navigation */
+#header-nav {
+    text-align: right;
+}
+
+#header-nav p {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    color: white;
+    text-transform: uppercase;
+    font-size: xx-small;
+    padding-right: 80px;
+
+}
+
+#header-nav a {
+    text-decoration: none;
+    color: white; 
     
+}
+
+#header-nav a:hover {
+    background-color: brown;
+
 }
 
 /* Media Queries */

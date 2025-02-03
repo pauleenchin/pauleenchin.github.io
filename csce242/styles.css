@@ -12,7 +12,6 @@ body {
     padding: 2%;
     width: 90%;
     margin: auto;
-    color: #013A40;
     line-height: 1.4;
 }
 
@@ -20,10 +19,23 @@ body {
     color: #c2a674;
     text-align: left;
 }
+#headers {
+    color: #013A40;
+}
 
-header h1, h2, header h3 {
-    color: #107373;
+h1, h2, h3 {
     text-align: center;
+}
+
+header h3 {
+    color: #107373;
+}
+
+h2 {
+    background-color: rgb(148, 190, 190, 0.35);
+    border-radius: 4px;
+    margin: 15px;
+    color: #107373;
 }
 
 header h3 {
@@ -32,15 +44,18 @@ header h3 {
 
 #assignment-block, #project-block {
     background-color: rgb(148, 190, 190);
-    padding: 8px;
-    margin: 15px auto;
+    padding: 20px;
     border-radius: 2px;
     border: 3px solid aliceblue;
     text-align: center;
+    border-radius: 8px;
+    margin: 15px;
 }
 
 footer {
     color: antiquewhite;
+    background-color: #107373;
+    text-align: center;
 }
 
 /* Images */
