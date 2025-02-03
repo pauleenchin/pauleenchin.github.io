@@ -32,7 +32,7 @@ body {
 #garnet-header {
     width: 100%;
     margin-top: -1px;
-    background-color: rgb(137, 7, 7);
+    background-color: #8B512D;
     padding-top: 5px;
     padding-left: 80px;
     padding-bottom: 5px;
@@ -51,7 +51,7 @@ body {
 
 #featured-article-title {
     text-decoration: none;
-    color: brown;
+    color: #73000A;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: x-large;
@@ -63,12 +63,6 @@ body {
     width: 100%;
     padding: 10px;
     position: relative;
-}
-
-.divider {
-    width: 100%;
-    height: 1px;
-    color: blueviolet;
 }
 
 #blurb-category-section {
@@ -108,7 +102,7 @@ body {
 .block-title {
     text-decoration: none;
     margin-top: 4px;
-    color: #73000a;
+    color: #73000A;
     font-weight: bolder;
 }
 
@@ -125,7 +119,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 5px;
-    color: #73000a;
+    color: #73000A;
 }
 
 #social-icons-container {
@@ -164,7 +158,7 @@ body {
 #gray-footer {
     margin-top: 100px;
     display: flex;
-    background-color: gray;
+    background-color: #ECECEC;
     height: 40px;
 }
 
@@ -295,7 +289,7 @@ body {
 }
 
 #header-nav a:hover, .sidelink:hover {
-    background-color: brown;
+    background-color: #73000A;
     color: white;
 
 }
@@ -329,7 +323,7 @@ body {
         position: absolute;
         top: 500px;
         left: 110px;
-        box-shadow: 0 4px 8px rgba(80, 7, 7);
+        box-shadow: 0 4px 8px #73000A;
     }
 
     #sidelinks-column {
