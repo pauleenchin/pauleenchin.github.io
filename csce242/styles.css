@@ -50,6 +50,7 @@ header h3 {
     text-align: center;
     border-radius: 8px;
     margin: 15px;
+    max-width: 300px;
 }
 
 footer {
@@ -98,8 +99,10 @@ footer {
 /* Media Queries */
 @media screen and (min-width:900px) {
     .columns {
-        display: flex;
-        flex-wrap: nowrap;
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
     }
 
     .one {
