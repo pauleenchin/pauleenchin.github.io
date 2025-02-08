@@ -42,15 +42,21 @@ header h3 {
     padding-right: 10px;
 }
 
+.columns {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
 #assignment-block, #project-block {
     background-color: rgb(148, 190, 190);
     padding: 20px;
     border-radius: 2px;
     border: 3px solid aliceblue;
     text-align: center;
-    border-radius: 8px;
     margin: 15px;
-    max-width: 300px;
+    
 }
 
 footer {
@@ -64,9 +70,12 @@ footer {
     display: block;
     margin-top: auto;
     position: relative;
-    padding: 8px;
+    padding: 0px;
     width: 200px;
-    height: 100px;
+    height: 120px;
+    border-spacing: 0;
+    border:#a7ced2 3px solid;
+    border-radius: 2px;
 }
 
 .center {
@@ -84,7 +93,7 @@ footer {
     text-decoration: none;
     color: #013A40;
     font-weight: bolder;
-    padding: 15px auto 10px auto;
+    padding: 30px auto 80px auto;
 }
 
  .assignment-links:hover, .project-links:hover {
@@ -97,11 +106,13 @@ footer {
 }
 
 /* Media Queries */
-@media screen and (min-width:900px) {
+@media screen and (min-width: 768px) {
     .columns {
-        display: inline-flex;
+        display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        align-items: center stretch;
+        justify-content: flex-start;
     }
 
     .one {
@@ -111,6 +122,11 @@ footer {
     #assignment-links, #project-links {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #assignment-block, #project-block {
+        max-width: 300px;
+        
     }
 }
 
