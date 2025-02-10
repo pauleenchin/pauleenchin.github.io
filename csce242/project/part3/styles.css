@@ -2,9 +2,14 @@
     --primary-color: #f0f0f0;
     --secondary-color: #767676;
     --accent-color: #393939;
+    --secondary-accent-color: #b3b3b3;
 }
 
 /* Structure */
+#page {
+    margin: 0 30px;
+}
+
 body {
     padding: 0;
     margin: 0;

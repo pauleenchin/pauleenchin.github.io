@@ -3,23 +3,40 @@
     <head>
         <title>Pokeverse: Home</title>
         <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="forum-styles.css" />
         <!-- Pauleen Chin, CSCE 242 -->
     </head>
     <body>
+        <header id="main-header">
+            <div id="header-title">
+                <h1>Pokeverse</h1>
+            </div>
+            <nav id="header-nav">
+                <p>
+                    <a href="index.html">Home</a>
+                    <a href="pokedex-page.html">Pokedex</a>
+                    <a href="forums-page.html">Forums</a>
+                    <a href="contact-page.html">Contact Us</a>                   
+                </p>
+            </nav>
+        </header>
+        <h2 id="contact-header">Contact Us</h2>
         <div id="page">
-            <header id="main-header">
-                <div id="header-title">
-                    <h1>Pokeverse</h1>
+            <section id="contact-container">
+                <div>
+                  <label for="txt-name">Name: </label>
+                  <input type="text" id="txt-name" />
                 </div>
-                <nav id="header-nav">
-                    <p>
-                        <a href="index.html">Home</a>
-                        <a href="pokedex-page.html">Pokedex</a>
-                        <a href="forums-page.html">Forums</a>
-                        <a href="contact-page.html">Contact Us</a>                   
-                    </p>
-                </nav>
-            </header>
+                <div>
+                  <label for="txt-email">Email: </label>
+                  <input type="text" id="txt-email" />
+                </div>
+                <div>
+                  <label for="txt-input">Comments, Questions, or Concerns </label>
+                  <textarea for="txt-com"></textarea>
+                </div>
+                <button id="btn-submit">Submit</button>
+              </section>
             
         </div>
 

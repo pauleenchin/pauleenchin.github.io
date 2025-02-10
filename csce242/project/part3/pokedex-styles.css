@@ -1,16 +1,14 @@
-:root {
-    --primary-color: #dcdcdc;
-    --secondary-color: #767676;
-    --accent-color: #393939;
-}
-
 
 /* Structure */
-#pokedex-title {
+#pokedex-header {
     padding-left: 20px;
     background-color: var(--secondary-color);
     padding: 8px;
     margin: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #pokemons {
@@ -26,6 +24,12 @@
     width: 200px;
     height: 300px;
     margin: 8px;
+}
+
+.poke-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .poke-number {

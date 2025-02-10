@@ -3,63 +3,59 @@
     <head>
         <title>Pokeverse: Home</title>
         <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="forum-styles.css" />
+        <link rel="stylesheet" href="poke-styles.css" />
         <!-- Pauleen Chin, CSCE 242 -->
     </head>
     <body>
-        <div id="page">
-            <header id="main-header">
-                <div id="header-title">
-                    <h1>Pokeverse</h1>
-                </div>
-                <nav id="header-nav">
-                    <p>
-                        <a href="index.html">Home</a>
-                        <a href="pokedex-page.html">Pokedex</a>
-                        <a href="forums-page.html">Forums</a>
-                        <a href="contact-page.html">Contact Us</a>                   
-                    </p>
-                </nav>
-            </header>
-            <h3 id="pokedex-title">Forums</h3>
+        <header id="main-header">
+            <div id="header-title">
+                <h1>Pokeverse</h1>
+            </div>
+            <nav id="header-nav">
+                <p>
+                    <a href="index.html">Home</a>
+                    <a href="pokedex-page.html">Pokedex</a>                        
+                    <a href="forums-page.html">Forums</a>
+                    <a href="contact-page.html">Contact Us</a>                   
+                </p>
+            </nav>
+        </header>
+        <div id="poke-header">
+            <a href="#" id="poke-nav-left">&larr; #XXXW</a>
+            <h2 id="poke-number-name">#XXXX Charmander &#9733;</h2>
+            <a href="#" id="poke-nav-right">#XXXY &rarr;</a>
         </div>
-        <main id="content" class="columns">
-            <section id="forums" class="three">
-                <section id="forum-posts">
-                    <h2>Discussions</h2>
-                    <div class="discussion-post">
-                        <h3 class="discussion-title">Lorem ipsum</h3>
-                        <p class="discussion-author">
-                        <p class="discussion-content">loremjnfowuefowuebfuoesrfbubjksebukesfklaerbgolgrbalkuwrvgo</p>
-                    </div>
-                    <div class="discussion-post">
-                        <h3 class="discussion-title">Lorem ipsum</h3>
-                        <p class="discussion-author">
-                        <p class="discussion-content">loremjnfowuefowuebfuoesrfbubjksebukesfklaerbgolgrbalkuwrvgo</p>
-                    </div>
-                    <div class="discussion-post">
-                        <h3 class="discussion-title">Lorem ipsum</h3>
-                        <p class="discussion-author">
-                        <p class="discussion-content">loremjnfowuefowuebfuoesrfbubjksebukesfklaerbgolgrbalkuwrvgo</p>
-                    </div>
-                    <div class="discussion-post">
-                        <h3 class="discussion-title">Lorem ipsum</h3>
-                        <p class="discussion-author">
-                        <p class="discussion-content">loremjnfowuefowuebfuoesrfbubjksebukesfklaerbgolgrbalkuwrvgo</p>
-                    </div>
-                </section>
-            </section>
-            <aside id="trending-topics-section" class="one">
-                <div><img id="about-pic" src="https://place-hold.it/100/FFE066/3C3C3C">
-                    <h3>Trending Topics</h3>
-                    <p> 
-                    </p>
-                    <p> 
-                    </p>
+        <div id="page">
+            <div id="main-content" class="columns">
+                <div class="one container">
+                    <img src="https://placehold.co/600x400" />
                 </div>
-            </aside>
-        </main>
-
+                <div class="one container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi, sed vestibulum sapien at eros pretium, eget hendrerit arcu luctus. Fusce tincidunt felis nec ligula pharetra, sed congue augue rhoncus. Nam scelerisque turpis nec nisl ullamcorper, ut efficitur neque fermentum.</p>
+                    <div class="columns container">
+                        <div id="stats" class="one">
+                            <h4 class="section-title">Stats:</h4>
+                            <img src="https://placehold.co/200x300" />
+                        </div>
+                        <div id="weaknesses-abilities" class="one">
+                            <h4 class="section-title">Weaknesses: &#9733;</h4>
+                            <h4 class="section-title">Abilities:</h4>
+                            <p>lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="additional-content" class="columns">
+                    <div id="evolutions" class="one">
+                        <h4 class="section-title">Evolutions</h4>
+                        <img src="https://placehold.co/200x300" />
+                    </div>
+                    <div id="card-art">
+                        <h4 class="section-title">Charmander Cards</h4>
+                        <img src="https://placehold.co/200x300" />
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer>  
             <p>&copy; pchin</p>
         </footer>
