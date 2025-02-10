@@ -16,10 +16,57 @@
 }
 
 .container, #additional-content {
+    text-align: left;
+    margin: 10px;
+}
+
+#main-poke-img, #evolutions-poke-img, #card-art-img {
+    margin: 10px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+#bio-text {
+    text-align: left; /* Centers the text */
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers text horizontally */
+    width: 100%; /* Ensures full width */
+    margin: 10x;
+    
+}
+
+#stats-img-container {
     text-align: center;
 }
 
+#weaknesses-abilities {
+    padding: 10px;
+    background-color: var(--secondary-accent-color);
+    border-radius: 4px;
+}
+
+#evolutions, #card-art {
+    margin: 10px;
+}
+
+#sub-section {
+    gap: 15px;
+}
+
+.section-title {
+    margin: 0 0 10px;
+}
 /* Media Queries */
 @media screen and (min-width: 768px) {
+    
+
+    #additional-content {
+        display: flex;
+        margin-top: 20px; 
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+    }
     
 }

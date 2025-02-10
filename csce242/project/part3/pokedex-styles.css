@@ -26,12 +26,6 @@
     margin: 8px;
 }
 
-.poke-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
 .poke-number {
     position: absolute;
     top: 2px;

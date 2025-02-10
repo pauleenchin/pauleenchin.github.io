@@ -48,6 +48,12 @@ header {
     border-radius: 4px;
 }
 
+.clickable-box {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 #mystery-pokemon  {
     padding: 15px;
     background-color: var(--secondary-color);
