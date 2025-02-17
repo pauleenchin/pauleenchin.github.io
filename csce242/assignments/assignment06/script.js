@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // switch exercises
-    const exercise1Link = document.getElementById("exercise-link");
+    const exercise1Link = document.getElementById("exercise1-link");
     const exercise2Link = document.getElementById("exercise2-link");
     const travelSection = document.getElementById("travel-section");
     const heartSection = document.getElementById("heart-section");
