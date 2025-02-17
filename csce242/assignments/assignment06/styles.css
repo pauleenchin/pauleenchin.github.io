@@ -1,0 +1,154 @@
+/* Structure */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f2;
+    color: #3c3a3a;
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+}
+
+h1 {
+    color: #5a7d7c;
+}
+
+h2 {
+    color: #d17c7c;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #5a7d7c;
+    color: white;
+}
+
+.container {
+    background-color: #f0f0dc;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.heart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.heart {
+    font-size: 100px;
+    color: white;
+}
+
+/* Navigation */
+.main-nav {
+    background-color: #5a7d7c;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-toggle {
+    display: block;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #5a7d7c;
+}
+
+.nav-links.show {
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+/* Input */
+input {
+    padding: 10px;
+    width: 80%;
+    margin-top: 10px;
+    border: 2px solid #5a7d7c;
+    border-radius: 5px;
+}
+
+/* Buttons */
+.button-container button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[data-color="red"] {
+    background-color: red;
+    color: white;
+}
+
+button[data-color="green"] {
+    background-color: green;
+    color: white;
+}
+
+button[data-color="blue"] {
+    background-color: blue;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Images */
+.img-container {
+    margin-top: 20px;
+    height: 150px;
+}
+
+.img-container img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .nav-toggle {
+        display: none;
+    }
+    .nav-links {
+        display: flex ;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .nav-links a:not(:last-child)::after {
+        content: " | ";
+        color: white;
+        position: absolute;
+        right: -10px;
+    }
+}

@@ -1,0 +1,77 @@
+#page {
+    margin: 0 90px;
+}
+
+/* Structure */
+#yugidex-header {
+    padding-left: 20px;
+    background-color: var(--secondary-color);
+    padding: 8px;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--accent-color);
+}
+
+#monsters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.yugi-block {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    margin: 8px;
+    box-shadow: var(--shadow-preset);
+}
+
+.yugi-number {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.yugi-name {
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Images */
+.yugi-block img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 4px;
+    object-fit: fill;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .columns {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center stretch;
+        justify-content: flex-start;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .three {
+        flex: 3;
+    }
+}
+
