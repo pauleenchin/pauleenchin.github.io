@@ -113,6 +113,14 @@ footer {
     margin:6px 0;
 }
 
+.toggle-nav {
+    display: block;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
 /* Images */
 #logo {
     width: 30px;
@@ -155,6 +163,10 @@ footer {
 /* Typography */
 #header-title h1 {
     font-size: 40px;
+}
+
+.hidden {
+    display: none;
 }
 
 
@@ -225,5 +237,9 @@ footer {
 
     .hide-small {
         display: contents;
+    }
+
+    .toggle-nav {
+        display: none;
     }
 }

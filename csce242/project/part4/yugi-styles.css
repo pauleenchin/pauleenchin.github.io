@@ -11,7 +11,7 @@
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    color: var(--secondary-accent-color);
+    color: var(--accent-color);
 }
 
 #yugi-nav-left, #yugi-nav-right {
@@ -34,6 +34,9 @@
 
 #main-yugi-img {
     align-items: center;
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
 }
 
 #bio-text {

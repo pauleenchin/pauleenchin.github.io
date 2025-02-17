@@ -32,7 +32,6 @@ footer {
     margin: 20px auto;
     width: 50%;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .heart-container {
@@ -146,14 +145,19 @@ button[data-color="blue"] {
         display: none;
     }
     .nav-links {
-        display: flex ;
         flex-direction: row;
         justify-content: center;
+        display: inline-flex;
+    }
+
+    .nav-links a {
+        position: relative;
     }
     .nav-links a:not(:last-child)::after {
-        content: " | ";
+        content: "|";
         color: white;
-        position: absolute;
-        right: -10px;
+        margin-left: 15px;
+        
+
     }
 }

@@ -53,7 +53,7 @@
     height: 100%;
     display: block;
     border-radius: 4px;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 /* Media Queries */

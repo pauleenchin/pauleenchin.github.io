@@ -53,6 +53,11 @@
     padding-right: 50px;
 }
 
+#about-us-container p {
+    line-height: 1.8;
+    
+}
+
 #txt-name,
 #txt-email,
 #txt-input,
