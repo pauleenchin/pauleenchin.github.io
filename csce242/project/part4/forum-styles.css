@@ -15,7 +15,10 @@
 
 #trending-topic-section {
     padding: 8px;
-    
+}
+
+#trending-topic-section div {
+    background-color: var(--secondary-color-sheer);
 }
 
 #forum-title, #about-us-header {
@@ -44,9 +47,12 @@
     color: var(--accent-color);
 }
 
-#contact-container {
+#contact-container, #trending-topics-section {
     text-align: left;
     margin: 10px;
+    background-color: var(--secondary-color-sheer);
+    padding: 8px 16px 8px 8px ;
+    border-radius: 2px;
 }
 
 #contact-page {
