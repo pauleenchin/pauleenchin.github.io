@@ -1,0 +1,85 @@
+:root {
+    --bg-color: rgb(255, 255, 255);
+    --primary-color: #4b0313;
+    --secondary-color: rgb(237, 171, 212);
+    --accent-color: rgb(161, 65, 125);
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: Arial, sans-serif;
+    justify-items: center;
+    display: grid;
+    text-align: center;
+}
+
+#content {
+    justify-items: center;
+    text-align: center;
+
+}
+
+header, footer {
+    text-align: center;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+h2, h4 {
+    color: var(--accent-color);
+}
+
+h3, footer {
+    color: var(--primary-color);
+}
+
+h4 {
+    color: var(--primary-color);
+}
+
+button {
+    padding: 8px;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-color: var(--accent-color);
+}
+
+body div {
+    padding: 20px 0 40px 0;
+}
+
+#ladder {
+    width: 150px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: grid;
+    gap: 32px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+#ladder hr {
+    border: solid black 4px;
+    width: 100%;
+}
+
+#ladder img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hidden {
+    display: none;
+}
+
+.border-inline {
+    border-left: solid black 12px;
+    border-right: solid black 12px;
+}
