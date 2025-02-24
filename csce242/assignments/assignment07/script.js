@@ -4,23 +4,31 @@ const rate = 35;
 const drawBtn = document.getElementById("draw-button");
 const climbBtn = document.getElementById("climb-button");
 const img = document.querySelector("#ladder img");
-const array = ["./images/right.png", "./images/left.png"];
+const array = ["images/right.png", "images/left.png"];
+
+let counter = 0;
+let stepsClimbed = 0;
+let intervalId;
 
 const createLadder = () => {
     const ladder = document.getElementById("ladder");
     ladder.classList.add("border-inline");
-    ladder.innerHTML = "";
-    ladder.classList.remove("hidden");
+    
 
     for (let i = 0; i < steps; ++i) {
         const hr = document.createElement("hr");
         ladder.append(hr);
     }
+
+    img.src = "images/left.png";
+    img.classList.remove("hidden");
+    img.style.bottom = "0px";
 };
 
 drawBtn.onclick = () => {
     createLadder();
-    img.classList.remove("hidden");
+    ladder.classList.remove("hidden");
+    
     climbBtn.classList.remove("hidden");
     drawBtn.disabled = true;
 };
@@ -30,13 +38,9 @@ climbBtn.onclick = () => {
     climbBtn.disabled = true;
 };
 
-let counter = 0;
-let stepsClimbed = 0;
-let intervalId;
-
 const Climb = () => {
     const ladderHeight = steps * rate;
-    let bottom = Number.parseInt(getComputedStyle(img).bottom) || 0;
+    let bottom = parseInt(getComputedStyle(img).bottom) || 0;
 
     if (bottom + rate >= ladderHeight) {
         img.style.bottom = `${ladderHeight}px`;
@@ -45,7 +49,7 @@ const Climb = () => {
         return;
     }
 
-    img.setAttribute("src", array[counter]);
+    img.src = array[counter];
     img.style.bottom = `${bottom + rate}px`;
 
     counter = (counter + 1) % 2;
@@ -56,4 +60,3 @@ const Climb = () => {
         climbBtn.disabled = false;
     }
 };
-
