@@ -46,10 +46,10 @@ const Climb = () => {
         img.style.bottom = `${ladderHeight}px`;
         clearInterval(intervalId);
         climbBtn.disabled = false;
-        return;
     }
 
     img.src = array[counter];
+    console.log(counter);
     img.style.bottom = `${bottom + rate}px`;
 
     counter = (counter + 1) % 2;
@@ -58,5 +58,6 @@ const Climb = () => {
     if (stepsClimbed >= steps) {
         clearInterval(intervalId);
         climbBtn.disabled = false;
+        return;
     }
 };
