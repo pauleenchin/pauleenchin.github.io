@@ -18,18 +18,19 @@
 #monsters {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 10px;
 }
 
 .yugi-block {
     position: relative;
     display: inline-block;
-    width: 200px;
+    max-width: 200px;
     height: 300px;
     margin: 8px;
     box-shadow: var(--shadow-preset);
-}
+
+    }
 
 .yugi-number {
     position: absolute;
@@ -79,6 +80,10 @@
 
     .three {
         flex: 3;
+    }
+
+    #monsters {
+        justify-content: space-between;
     }
 }
 
