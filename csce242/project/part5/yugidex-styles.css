@@ -18,7 +18,7 @@
 #monsters {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 10px;
 }
 
