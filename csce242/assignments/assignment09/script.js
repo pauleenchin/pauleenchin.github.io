@@ -34,19 +34,21 @@ function displayPizzas() {
 function openModal(pizzaName) {
     const pizza = pizzas.find(p => p.name === pizzaName);
     if (pizza) {
+        const modalImage = document.getElementById("modalImage");
+        
         document.getElementById("modalTitle").textContent = pizza.name;
         document.getElementById("modalIngredients").textContent = pizza.ingredients.join(", ");
         document.getElementById("modalSauce").textContent = pizza.sauce;
         document.getElementById("modalCheese").textContent = pizza.cheese;
         document.getElementById("modalPrice").textContent = pizza.price.toFixed(2);
-        document.getElementById("modalImage").src = `images/${pizza.image}`;
-        document.getElementById("modalImage").alt = pizza.name;
+        modalImage.src = `images/${pizza.image}`;
+        modalImage.alt = pizza.name;
 
         document.getElementById("pizzaModal").style.display = "block";
 
-        setTimeout(() => {
-            document.getElementById("modalImage").classList.add("rotate");
-        }, 100);
+        modalImage.classList.remove("rotate");
+        void modalImage.offsetWidth;
+        modalImage.classList.add("rotate");
     }
 }
 

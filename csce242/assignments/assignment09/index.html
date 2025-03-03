@@ -17,15 +17,17 @@
 
     <div id="pizzaModal" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-opacity modal-content">
-            <header class="w3-container w3-orange">
+            <header class="w3-container">
                 <span onclick="closeModal()" class="w3-button w3-display-topright">&times;</span>
                 <h2 id="modalTitle"></h2>
             </header>
-            <div class="w3-container">
-                <p><strong>Ingredients:</strong> <span id="modalIngredients"></span></p>
-                <p><strong>Sauce:</strong> <span id="modalSauce"></span></p>
-                <p><strong>Cheese:</strong> <span id="modalCheese"></span></p>
-                <p><strong>Price:</strong> $<span id="modalPrice"></span></p>
+            <div class="w3-container modal-body">
+                <div class="modal-details">
+                    <p><strong>Ingredients:</strong> <span id="modalIngredients"></span></p>
+                    <p><strong>Sauce:</strong> <span id="modalSauce"></span></p>
+                    <p><strong>Cheese:</strong> <span id="modalCheese"></span></p>
+                    <p><strong>Price:</strong> $<span id="modalPrice"></span></p>
+                </div>
                 <img id="modalImage" class="modal-img" src="" alt="">
             </div>
         </div>
