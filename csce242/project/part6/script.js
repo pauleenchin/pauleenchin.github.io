@@ -55,14 +55,15 @@ const populateMonsterPage = (monsters, name) => {
     document.getElementById("main-yugi-img").src = `../images/${monster.image}`;
     document.getElementById("bio-text").innerHTML = `<p>${monster.biotext}</p>`;
     
-    document.querySelector("#sub-section .columns").innerHTML = `
-        <div class="one"><h4>[${monster.type}]</h4></div>
-        <div class="one"><h4>Attribute: ${monster.attribute}</h4></div>
-    `;
-
-    document.querySelector("#sub-section .columns:last-child").innerHTML = `
-        <div class="one"><h4>Attack: ${monster.attack}</h4></div>
-        <div class="one"><h4>Defense: ${monster.defense}</h4></div>
+    document.getElementById("sub-section").innerHTML = `
+        <div class="columns">
+            <div class="one"><h4>Type: ${monster.type}</h4></div>
+            <div class="one"><h4>Attribute: ${monster.attribute}</h4></div>
+        </div>
+        <div class="columns">
+            <div class="one"><h4>Attack: ${monster.attack}</h4></div>
+            <div class="one"><h4>Defense: ${monster.defense}</h4></div>
+        </div>
     `;
 
     const cardArtContainer = document.getElementById("card-art");
@@ -70,7 +71,7 @@ const populateMonsterPage = (monsters, name) => {
     const cardArtRow = cardArtContainer.querySelector(".columns");
     monster.cardart.forEach(img => {
         const imgElement = document.createElement("img");
-        imgElement.src = `../images/${img}`;
+        imgElement.src = `../../json/images/${img}`;
         imgElement.classList.add("card-art-img", "one");
         cardArtRow.appendChild(imgElement);
     });
