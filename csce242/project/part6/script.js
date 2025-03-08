@@ -39,7 +39,7 @@ const populateDexPage = (monsters) => {
         
         monsterCard.innerHTML = `
             <div class="yugi-block">
-                <img src="../images/${monster.image}" alt="${monster.name}" />
+                <img src="../../json/images/${monster.image}" alt="${monster.name}" />
                 <p class="yugi-name">${monster.name}</p>
             </div>
         `;
@@ -52,7 +52,7 @@ const populateMonsterPage = (monsters, name) => {
     if (!monster) return;
 
     document.getElementById("yugi-number-name").innerHTML = `${monster.name} ${"&#9733;".repeat(monster.level)}`;
-    document.getElementById("main-yugi-img").src = `../images/${monster.image}`;
+    document.getElementById("main-yugi-img").src = `../../json/images/${monster.image}`;
     document.getElementById("bio-text").innerHTML = `<p>${monster.biotext}</p>`;
     
     document.getElementById("sub-section").innerHTML = `
@@ -69,10 +69,14 @@ const populateMonsterPage = (monsters, name) => {
     const cardArtContainer = document.getElementById("card-art");
     cardArtContainer.innerHTML = "<h4>Card Art</h4><div class='columns'></div>";
     const cardArtRow = cardArtContainer.querySelector(".columns");
-    monster.cardart.forEach(img => {
-        const imgElement = document.createElement("img");
-        imgElement.src = `../../json/images/${img}`;
-        imgElement.classList.add("card-art-img", "one");
-        cardArtRow.appendChild(imgElement);
-    });
+    if (monster.cardart.length > 0) {
+        monster.cardart.forEach(img => {
+            const imgElement = document.createElement("img");
+            imgElement.src = `../../json/images/${img}`;
+            imgElement.classList.add("card-art-img", "one");
+            cardArtRow.appendChild(imgElement);
+        });
+    } else {
+        cardArtContainer.innerHTML += "<p>No card art available</p>";
+    }
 };
