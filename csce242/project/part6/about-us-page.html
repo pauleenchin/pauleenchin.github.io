@@ -34,28 +34,45 @@
                         <br>Our extensive card database allows you to search for any card, check rulings, build decks, and stay updated on the latest releases. But Yu-Gi-Verse is more than just a database—it’s a place for duelists to connect. Our community forums are the perfect space to discuss strategies, share deck ideas, trade cards, and talk about everything from the latest banlist to classic formats.
                         
                         <br>Join Yu-Gi-Verse today and become part of a thriving dueling community where every card, combo, and conversation matters!</p>
+
+                        <h4>Getting Started</h4>
+                        <section id="tut-center">
+                            <iframe id="tutorial" src="https://www.youtube.com/embed/55gsu3_36Fs?si=SkUyDf7dR1W5uX8y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </section>
                 </div>
             </section>
             
             <section id="contact-container" class="one">
                 <h2>Contact Us</h2>
-                <div>
-                  <label for="txt-name">Name: </label>
-                  <input type="text" id="txt-name" />
-                </div>
-                <div>
-                  <label for="txt-email">Email: </label>
-                  <input type="text" id="txt-email" />
-                </div>
-                <div>
-                  <label for="txt-input">Comments, Questions, or Concerns </label>
-                  <textarea for="txt-com"></textarea>
-                </div>
-                <button id="btn-submit">Submit</button>
+
+                <form method="POST" id="form">
+
+                    <input type="hidden" name="access_key" value="6606bd2d-b0c4-4409-a58b-0441de9b56e8">
+                
+                    <div class="input-sec">
+                        <p>Name</p>
+                        <input type="text" placeholder="Name" name="name" required>
+                    </div>
+                    <div class="input-sec">
+                        <p>Email</p>
+                        <input type="email" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="input-sec">
+                        <p>Questions, Comments, or Concerns</p>
+                        <textarea placeholder="Comments" name="message" required></textarea>
+                    </div>
+
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                
+                    <button type="submit">Submit Form</button>
+                
+                    <div id="result"></div>
+                
+                </form>
               </section>
-            
         </div>
         <script src="script.js"></script>
+        <script src="contact-us.js"></script>
         <footer>  
             <p>&copy; pchin</p>
         </footer>
