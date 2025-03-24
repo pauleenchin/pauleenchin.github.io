@@ -1,0 +1,83 @@
+#page {
+    margin: 0 90px;
+}
+
+#yugi-header {
+    padding-left: 20px;
+    background-color: var(--secondary-color);
+    padding: 8px;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--accent-color);
+}
+
+#yugi-nav-left, #yugi-nav-right {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.container, #additional-content {
+    text-align: left;
+    margin: 10px;
+}
+
+#main-yugi-img, .card-art-img {
+    margin: 10px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.card-art-img {
+    width: 60px;
+    height: auto;
+}
+
+#main-yugi-img {
+    align-items: center;
+    height: 550px;
+    width: 600px;
+    object-fit: cover;
+}
+
+#bio-text {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10x;
+    
+}
+
+#weaknesses-abilities {
+    padding: 10px;
+    background-color: var(--secondary-accent-color);
+    border-radius: 4px;
+}
+
+#card-art {
+    margin: 10px;
+}
+
+#sub-section {
+    gap: 15px;
+}
+
+.section-title {
+    margin: 0 0 10px;
+}
+/* Media Queries */
+@media screen and (min-width: 768px) {
+ #additional-content {
+        display: flex;
+        margin-top: 20px; 
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+    }
+    
+}

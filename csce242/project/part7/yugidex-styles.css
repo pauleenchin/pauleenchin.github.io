@@ -1,0 +1,89 @@
+#page {
+    margin: 0 90px;
+}
+
+/* Structure */
+#yugidex-header {
+    padding-left: 20px;
+    background-color: var(--secondary-color);
+    padding: 8px;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--accent-color);
+}
+
+#monsters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.yugi-block {
+    position: relative;
+    display: inline-block;
+    max-width: 200px;
+    height: 300px;
+    margin: 8px;
+    box-shadow: var(--shadow-preset);
+
+    }
+
+.yugi-number {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.yugi-name {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+/* Images */
+.yugi-block img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .columns {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center stretch;
+        justify-content: flex-start;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    #monsters {
+        justify-content: space-between;
+    }
+}
+
