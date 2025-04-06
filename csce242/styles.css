@@ -23,7 +23,7 @@ body {
     color: #013A40;
 }
 
-h1, h2, h3 {
+h1, h2, h3, header p {
     text-align: center;
 }
 
@@ -90,14 +90,14 @@ footer {
     text-decoration: none;
 }
 
-.assignment-links, .project-links {
+.assignment-links, .project-links, .assignment-title, .project-title {
     text-decoration: none;
     color: #013A40;
     font-weight: bolder;
     padding: 30px auto 80px auto;
 }
 
- .assignment-links:hover, .project-links:hover {
+ .assignment-links:hover, .project-links:hover, .block-link:hover {
     color: #F2D091;
  }
 
